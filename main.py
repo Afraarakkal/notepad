@@ -104,7 +104,10 @@ root.resizable(0, 0)
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-icon = ImageTk.PhotoImage(Image.open('Notepad.png'))
+# Example fix for the file path issue
+
+icon = ImageTk.PhotoImage(Image.open(r'C:\Users\fathi\Downloads\text-editor-notepad-python-code\Notepad.png'))
+
 root.iconphoto(False, icon)
 file = ''
 
